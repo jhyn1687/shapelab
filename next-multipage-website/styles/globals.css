@@ -1,0 +1,45 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.navbar {
+  display: flex;
+  flex: 1;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)); 
+}
+
+.navbar Button {
+  font-weight: bold;
+  color:rgba(255, 255, 255);
+}
+
+.header {
+  position: relative;
+  width: 100%
+}
+
+.footer {
+  text-align: center;
+  color:rgba(133, 133, 133);
+  padding: 10px 0px
+}
+
