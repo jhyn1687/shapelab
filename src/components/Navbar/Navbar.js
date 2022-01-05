@@ -1,4 +1,4 @@
-import { Button } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 import React from 'react';
 import {NavLink, Nav, Bars, NavMenu} from './NavbarComps';
 // import Logo from'../../images/logo.svg';
@@ -8,9 +8,7 @@ const Navbar = () => {
     <div>
       <Nav>
         <NavLink to="/">
-          <h1 style={{
-            textDecoration:'none',
-          }}>Tony Yuan</h1>
+          <h1>Tony Yuan</h1>
           {/* <img src={Logo} alt='logo' /> */}
         </NavLink>
         <Bars />
