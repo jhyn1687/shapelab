@@ -7,7 +7,9 @@ const Projects = () => {
       <Helmet>
         <title>Tony Yuan | Projects</title>
       </Helmet>
-      <h1>Projects</h1>
+      <div className='container'>
+        <h1 className='content'>Projects</h1>
+      </div>
     </>
   )
 };

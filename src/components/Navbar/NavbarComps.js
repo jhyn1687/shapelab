@@ -1,9 +1,30 @@
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 import {NavLink as Link} from 'react-router-dom';
 import {FaBars} from 'react-icons/fa';
 
+const underlineAnimation = keyframes`
+  from {
+    text-underline-offset: 0.1rem;
+  }
+
+  to {
+    text-decoration-color: rgba(223, 239, 202, 1);
+    text-underline-offset: 0.3rem;
+  }
+`
+const underlineAnimationActive = keyframes`
+  from {
+    text-underline-offset: 0.1rem;
+  }
+
+  to {
+    text-decoration-color: rgba(255, 249, 165, 1);
+    text-underline-offset: 0.3rem;
+  }
+`
+
 export const Nav = styled.nav`
-  background: #000;
+  background: #0a1128;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -13,36 +34,41 @@ export const Nav = styled.nav`
 
 export const Bars = styled(FaBars)`
   display: none;
-  color: #fff;
+  color: #DFEFCA;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 500px) {
     display: block;
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 75%);
+    transform: translate(-100%, 90%);
     font-size: 1.8rem;
     cursor: pointer;
   }
 `
 
 export const NavLink = styled(Link)`
-  color: #fff;
+
+  color: #DFEFCA;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  
+  text-decoration: underline 0.1rem rgba(255, 249, 165, 0);
 
   &.active {
-    text-decoration: underline;
-    text-decoration-thickness: 0.1rem;
-    text-underline-offset: 0.3rem;
+    color: #FFF9A5;
+  }
+
+  &.active:hover {
+    animation: ${underlineAnimationActive} 0.2s linear forwards;
   }
 
   &:hover {
-    color: #15cdfc;
+    animation: ${underlineAnimation} 0.2s linear forwards;
   }
 `
 
@@ -51,7 +77,7 @@ export const NavMenu = styled.div`
   align-items: center;
   margin-right: 24px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 500px) {
     display: none;
   }
 `

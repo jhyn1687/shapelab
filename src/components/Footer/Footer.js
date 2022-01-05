@@ -1,10 +1,11 @@
 import React from 'react';
+import {FooterContainer, CopyrightMessage} from './FooterComps';
 
 const Footer = () => {
   return (
-    <div>
-      
-    </div>
+    <FooterContainer>
+      <CopyrightMessage>{'\u00A9'} Junhao Yuan 2021</CopyrightMessage>
+    </FooterContainer>
   )
 }
 

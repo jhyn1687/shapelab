@@ -1,5 +1,4 @@
 import './App.css';
-import Button from '@mui/material/Button';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
 import Projects from'./pages/Projects';
