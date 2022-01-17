@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {NavLink, Nav, Bars, NavMenu} from './NavbarComps';
 // import Logo from'../../images/logo.svg';
 
 const Navbar = () => {
+  const [dropdown, setDropdown] = React.useState(false);
+
+  const showDropdown = () => {setDropdown(!dropdown);}
+
   return (
     <div>
       <Nav>
@@ -10,18 +14,18 @@ const Navbar = () => {
           <h1>Tony Yuan</h1>
           {/* <img src={Logo} alt='logo' /> */}
         </NavLink>
-        <Bars />
-        <NavMenu>
+        <NavMenu isOpen={dropdown} onClick={() => {setDropdown(false);}}>
           <NavLink to="/">
             <h1>Home</h1>
           </NavLink>
-          <NavLink to="/Projects">
+          <NavLink to="/Projects" onClick={() => {setDropdown(false);}}>
            <h1>Projects</h1>
           </NavLink>
-          <NavLink to="/contact">
+          <NavLink to="/contact" onClick={() => {setDropdown(false);}}>
             <h1>Contact</h1>
           </NavLink>
         </NavMenu>
+        <Bars onClick={showDropdown}/>
       </Nav>
     </div>
   )

@@ -6,7 +6,9 @@ export const FooterContainer = styled.nav`
   display: flex;
   justify-content: center;
   padding: 0.5rem calc((100vw - 1000px) / 2);
-  z-index: 10;
+  z-index: 5;
+  position: relative;
+  bottom: 0;
 `
 
 export const CopyrightMessage = styled.h1`
@@ -14,5 +16,4 @@ export const CopyrightMessage = styled.h1`
   display: flex;
   align-items: center;
   padding: 0 1rem;
-  height: 100%;
 `
