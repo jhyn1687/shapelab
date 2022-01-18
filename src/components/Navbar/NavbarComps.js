@@ -1,7 +1,7 @@
 import styled, {keyframes} from 'styled-components';
 import {NavLink as Link} from 'react-router-dom';
 import {FaBars} from 'react-icons/fa';
-import {AiOutlineClose as CloseIcon} from 'react-icons/ai'
+import {VscChromeClose as CloseIcon} from 'react-icons/vsc'
 
 const underlineAnimation = keyframes`
   from {
@@ -48,12 +48,15 @@ export const Bars = styled(FaBars)`
     transform: translate(-75%, 120%);
     font-size: 1.5rem;
     cursor: pointer;
+    opacity: ${props => props.isOpen ? "0%" : "100%"};
+    transition: opacity 0.1s ease-in;
   }
 `
 
 export const Close = styled(CloseIcon)`
   display: none;
   color: #DFEFCA;
+  
 
   @media screen and (max-width: 500px) {
     display: block;
@@ -63,6 +66,8 @@ export const Close = styled(CloseIcon)`
     transform: translate(-75%, 120%);
     font-size: 1.5rem;
     cursor: pointer;
+    opacity: ${props => props.isOpen ? "100%" : "0%"};
+    transition: opacity 0.1s ease-in;
   }
 `
 

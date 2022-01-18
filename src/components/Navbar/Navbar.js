@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import {NavLink, Nav, Bars, NavMenu} from './NavbarComps';
+import {NavLink, Nav, Bars, NavMenu, Close} from './NavbarComps';
 // import Logo from'../../images/logo.svg';
 
 const Navbar = () => {
-  const [dropdown, setDropdown] = React.useState(false);
+  const [dropdown, setDropdown] = useState(false);
 
   const showDropdown = () => {setDropdown(!dropdown);}
 
@@ -25,7 +25,8 @@ const Navbar = () => {
             <h1>Contact</h1>
           </NavLink>
         </NavMenu>
-        <Bars onClick={showDropdown}/>
+        <Bars isOpen={dropdown} onClick={showDropdown}/>
+        <Close isOpen={dropdown} onClick={showDropdown}/>
       </Nav>
     </div>
   )
