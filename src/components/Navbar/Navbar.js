@@ -1,35 +1,68 @@
 import React, {useState} from 'react';
-import {NavLink, Nav, Bars, NavMenu, Close} from './NavbarComps';
+import { NavLink, Nav, Bars, NavMenu, Close, Logo } from "./NavbarComps";
 // import Logo from'../../images/logo.svg';
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
 
-  const showDropdown = () => {setDropdown(!dropdown);}
+  const showDropdown = () => {
+    setDropdown(!dropdown);
+  };
 
   return (
     <div>
       <Nav>
-        <NavLink to="/">
-          <h1>Tony Yuan</h1>
+        <Logo to="/">
+          <h1>ShapeLAB</h1>
           {/* <img src={Logo} alt='logo' /> */}
-        </NavLink>
-        <NavMenu isOpen={dropdown} onClick={() => {setDropdown(false);}}>
-          <NavLink to="/">
-            <h1>Home</h1>
+        </Logo>
+        <NavMenu isOpen={dropdown}>
+          <NavLink
+            to="/"
+            onClick={() => {
+              setDropdown(false);
+            }}
+          >
+            <h3>Home</h3>
           </NavLink>
-          <NavLink to="/Projects" onClick={() => {setDropdown(false);}}>
-           <h1>Projects</h1>
+          <NavLink
+            to="/publications"
+            onClick={() => {
+              setDropdown(false);
+            }}
+          >
+            <h3>Publications</h3>
           </NavLink>
-          <NavLink to="/contact" onClick={() => {setDropdown(false);}}>
-            <h1>Contact</h1>
+          <NavLink
+            to="/members"
+            onClick={() => {
+              setDropdown(false);
+            }}
+          >
+            <h3>Members</h3>
+          </NavLink>
+          <NavLink
+            to="/projects"
+            onClick={() => {
+              setDropdown(false);
+            }}
+          >
+            <h3>Projects</h3>
+          </NavLink>
+          <NavLink
+            to="/contact"
+            onClick={() => {
+              setDropdown(false);
+            }}
+          >
+            <h3>Contact</h3>
           </NavLink>
         </NavMenu>
-        <Bars isOpen={dropdown} onClick={showDropdown}/>
-        <Close isOpen={dropdown} onClick={showDropdown}/>
+        <Bars isOpen={dropdown} onClick={showDropdown} />
+        <Close isOpen={dropdown} onClick={showDropdown} />
       </Nav>
     </div>
-  )
+  );
 };
 
 export default Navbar;

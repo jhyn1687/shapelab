@@ -1,11 +1,11 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-const Home = () => {
+const Publications = () => {
   return (
     <>
       <Helmet>
-        <title>Publications | Home</title>
+        <title>ShapeLAB | Publications</title>
       </Helmet>
       <div className="container">
         <h1 className="content">Publications</h1>
@@ -15,4 +15,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Publications;

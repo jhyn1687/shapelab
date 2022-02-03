@@ -5,13 +5,13 @@ const Projects = () => {
   return (
     <>
       <Helmet>
-        <title>Tony Yuan | Projects</title>
+        <title>ShapeLAB | Projects</title>
       </Helmet>
-      <div className='container'>
-        <h1 className='content'>Projects</h1>
+      <div className="container">
+        <h1 className="content">Projects</h1>
       </div>
     </>
-  )
+  );
 };
 
 export default Projects;
