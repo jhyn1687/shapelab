@@ -12,13 +12,13 @@ const Navbar = () => {
   return (
     <div>
       <Nav>
-        <Logo to="/">
+        <Logo to="/home">
           <h1>ShapeLAB</h1>
           {/* <img src={Logo} alt='logo' /> */}
         </Logo>
         <NavMenu isOpen={dropdown}>
           <NavLink
-            to="/"
+            to="/home"
             onClick={() => {
               setDropdown(false);
             }}

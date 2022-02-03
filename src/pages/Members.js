@@ -17,8 +17,8 @@ const Members = () => {
         <title>ShapeLAB | Members</title>
       </Helmet>
       <Routes>
-        <Route path=":id" element={<Home />} />
-        <Route path="/" element={<Projects />} />
+        <Route path=":id" element={<Topic />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </>
   );

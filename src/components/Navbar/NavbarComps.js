@@ -43,7 +43,7 @@ export const Bars = styled(FaBars)`
   display: none;
   color: #37d4fb;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 800px) {
     display: block;
     position: absolute;
     top: 0;
@@ -121,7 +121,7 @@ export const NavMenu = styled.div`
   position: relative;
   z-index: 10;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 800px) {
     overflow: hidden;
     flex-direction: column;
     width: 100%;
