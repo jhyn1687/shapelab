@@ -7,9 +7,9 @@ const Publications = () => {
       <Helmet>
         <title>ShapeLAB | Publications</title>
       </Helmet>
-      <div className="container">
-        <h1 className="content">Publications</h1>
-        <p className="content"></p>
+      <div className="column-container">
+        <h1 className="text-content">Publications</h1>
+        <p className="text-content"></p>
       </div>
     </>
   );

@@ -6,6 +6,7 @@
   neutral: #aab4bd
   light-on-dark text: #37d4fb
   light-on-dark text highlight: #05c1f0
+  dark-on-light text: #050401
 */
 * {
   font-family: 'Montserrat', sans-serif;
@@ -33,21 +34,37 @@ body {
   flex: 1;
 }
 
-.container {
+.column-container {
   background-color: #E3EFF3;
-  padding: 0.5rem calc((100vw - 1000px) / 2);
+  padding: 1rem calc((100vw - 1000px) / 2);
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.content {
+.row-container {
+  background-color: #E3EFF3;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text-content {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: .5rem 1rem;
+  color: #050401;
+}
+
+/* .content {
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 1rem 1rem;
-}
+} */
 
 img {
   min-width: 100%;

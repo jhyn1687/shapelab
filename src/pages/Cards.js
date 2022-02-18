@@ -1,34 +1,6 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import { Route, Routes } from "react-router-dom";
-
+import React from 'react';
 import '../css/Cards.css';
 import CardItem from '../components/Cards/CardItem';
-
-const Projects = () => {
-  return (
-    <>
-      <Helmet>
-        <title>ShapeLAB | Projects</title>
-      </Helmet>
-      <Routes>
-        <Route path=":id" element={<Topic />} />
-        <Route path="/" element={<Cards />} />
-      </Routes>
-    </>
-  );
-};
-
-function Topic() {
-  return (
-    <div className="column-container">
-      <h1 className="text-content">Projects</h1>
-      
-
-      <p className="text-content">test</p>
-    </div>
-  );
-}
 
 function Cards() {
   return (
@@ -76,4 +48,4 @@ function Cards() {
   );
 }
 
-export default Projects;
+export default Cards;

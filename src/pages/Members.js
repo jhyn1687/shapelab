@@ -1,36 +1,29 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import Home from "./Home";
-import Projects from "./Projects";
-import Contact from "./Contact";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useMatch,
-} from "react-router-dom";
+import { membersData as data } from "../data/members-data.js";
 
 const Members = () => {
   return (
     <>
       <Helmet>
-        <title>ShapeLAB | Members</title>
+        <title>ShapeLAB | {data.title}</title>
       </Helmet>
-      <Routes>
-        <Route path=":id" element={<Topic />} />
-        <Route path="/" element={<Home />} />
-      </Routes>
+
+      <div className="column-container">
+        <h1 className="text-content">Members</h1>
+        {[data].map((dataIn) => {
+          return (
+            <div key={dataIn.title}>
+              <img
+                src={process.env.PUBLIC_URL + dataIn.image.src}
+                alt={dataIn.image.caption}
+              />
+            </div>
+          );
+        })}
+      </div>
     </>
   );
 };
 
-function Topic() {
-  return (
-    <div className="container">
-      <h1 className="content">Members</h1>
-
-      <p className="content">test</p>
-    </div>
-  );
-}
 export default Members;
