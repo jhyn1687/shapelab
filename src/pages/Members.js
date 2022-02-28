@@ -13,7 +13,7 @@ const Members = () => {
         <h1 className="text-content">Members</h1>
         {[data].map((dataIn) => {
           return (
-            <div key={dataIn.title}>
+            <div key={dataIn.title} style={{maxWidth: '800px', alignSelf: 'center',}}>
               <img
                 src={process.env.PUBLIC_URL + dataIn.image.src}
                 alt={dataIn.image.caption}

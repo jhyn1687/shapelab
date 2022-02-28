@@ -16,21 +16,22 @@ const Contact = () => {
             <div className="row-container">
               
               <div>
-                {dataIn.text.map((textIn) => (
-                  <p className="text-content">{textIn.line}</p>
+                {dataIn.content.map((textIn) => (
+                  <p className="text-content">{textIn}</p>
                 ))}
                 <p className="text-content">
-                  Email: 
+                  Email:&nbsp; 
                   <Link
-                    to="#"
-                    onClick={(e) => {
-                      window.location = "mailto:" + dataIn.email;
-                      e.preventDefault();
-                    }}
-                  >
-                    {dataIn.email}
-                  </Link>
+                  to="#"
+                  onClick={(e) => {
+                    window.location = "mailto:" + dataIn.email;
+                    e.preventDefault();
+                  }}
+                >
+                  {dataIn.email}
+                </Link>
                 </p>
+                
               </div>
               <div style={{alignContent: "right"}}>
                 <img

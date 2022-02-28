@@ -1,6 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useParams } from "react-router-dom";
+import { projectsData as data } from "../data/projects-data.js";
+import Cards from "./ProjectCards";
 
 import '../css/Cards.css';
 import CardItem from '../components/Cards/CardItem';
@@ -9,7 +11,7 @@ const Projects = () => {
   return (
     <>
       <Helmet>
-        <title>ShapeLAB | Projects</title>
+        <title>ShapeLAB | {data.title}</title>
       </Helmet>
       <Routes>
         <Route path=":id" element={<Topic />} />
@@ -20,6 +22,10 @@ const Projects = () => {
 };
 
 function Topic() {
+  const {id} = useParams();
+  let topicData =
+  import(id + '.json').then();
+
   return (
     <div className="column-container">
       <h1 className="text-content">Projects</h1>
@@ -30,50 +36,5 @@ function Topic() {
   );
 }
 
-function Cards() {
-  return (
-    <div className='cards'>
-      <h1 className="text-content">Projects</h1>
-      <div className='cards_container'>
-        <div className='cards_wrapper'>
-          <ul className='cards_items'>
-            <CardItem
-              src='images/img-9.jpg'
-              text='Short blurb about this project 1'
-              label='Ongoing'
-              path='/'
-            />
-            <CardItem
-              src='images/img-2.jpg'
-              text='Short blurb about this project 2'
-              label='Ongoing'
-              path='/'
-            />
-          </ul>
-          <ul className='cards_items'>
-            <CardItem
-              src='images/img-3.jpg'
-              text='Short blurb about this project 3'
-              label='Completed'
-              path='/'
-            />
-            <CardItem
-              src='images/img-4.jpg'
-              text='Short blurb about this project 4'
-              label='Completed'
-              path='/'
-            />
-            <CardItem
-              src='images/img-8.jpg'
-              text='Short blurb about this project 5'
-              label='Completed'
-              path='/'
-            />
-          </ul>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 export default Projects;
