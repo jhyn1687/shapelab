@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
-import { homeData as data } from "../data/home-data.js";
+import data from "../data/home-data.js";
 
 
 const Home = () => {

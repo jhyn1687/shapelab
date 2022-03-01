@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import { contactData as data } from "../data/contact-data.js";
+import data from "../data/contact-data.js";
 
 const Contact = () => {
   return (

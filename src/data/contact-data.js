@@ -1,4 +1,4 @@
-export const contactData = {
+const contactData = {
   "title": "Contact",
   "content": [
     "Anitha Pasupathy",
@@ -15,3 +15,6 @@ export const contactData = {
     "src" : "/images/thinker2014.jpg",
   },
 }
+
+
+export default contactData;

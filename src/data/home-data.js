@@ -1,4 +1,4 @@
-export const homeData = {
+const homeData = {
   "title": "Home",
   "image": {
     "caption" : "ShapeLAB Banner",
@@ -19,3 +19,5 @@ export const homeData = {
     },
   ],
 }
+
+export default homeData;

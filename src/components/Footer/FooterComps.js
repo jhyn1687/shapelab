@@ -15,5 +15,5 @@ export const CopyrightMessage = styled.p`
   color: #aab4bd;
   display: flex;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 `;

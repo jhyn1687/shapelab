@@ -1,4 +1,4 @@
-export const projectsData = {
+const projectsData = {
   "title": "Projects",
   "rows" : [
     {
@@ -16,3 +16,5 @@ export const projectsData = {
     "project8",
   ]
 }
+
+export default projectsData;

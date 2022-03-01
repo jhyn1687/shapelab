@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { membersData as data } from "../data/members-data.js";
+import data from "../data/members-data.js";
 
 const Members = () => {
   return (
