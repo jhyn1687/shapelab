@@ -16,8 +16,8 @@ const Home = () => {
               <h1 className="text-content">{dataIn.title}</h1>
               <img src={process.env.PUBLIC_URL + dataIn.image.src} alt={dataIn.image.caption} />
               <div>
-                {dataIn.text.map((textIn) => (
-                  <p className="text-content">{textIn.line}</p>
+                {dataIn.content.map((textIn) => (
+                  <p className="text-content">{textIn}</p>
                 ))}
               </div>
             </div>
