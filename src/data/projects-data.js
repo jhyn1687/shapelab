@@ -1,20 +1,15 @@
 const projectsData = {
-  "title": "Projects",
-  "rows" : [
-    {
-
-    }
-  ],
+  title: "Projects",
+  rows: [{}],
   "valid-projects": [
-    "project1",
-    "project2",
-    "project3",
-    "project4",
-    "project5",
-    "project6",
-    "project7",
-    "project8",
-  ]
-}
+    "shape-and-texture",
+    "partial-occlusion",
+    "dynamic-visual-stimuli",
+    "clutter-and-crowding",
+    "object-segmentation",
+    "pertubation-methods",
+    "multiphoton-imaging",
+  ],
+};
 
 export default projectsData;

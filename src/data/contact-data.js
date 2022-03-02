@@ -1,6 +1,6 @@
 const contactData = {
-  "title": "Contact",
-  "content": [
+  title: "Contact",
+  content: [
     "Anitha Pasupathy",
     "Professor",
     "University of Washington",
@@ -9,12 +9,11 @@ const contactData = {
     "Box 357420, HSB G-520",
     "Seattle, WA 98195",
   ],
-  "email": "pasupat@uw.edu",
-  "image": {
-    "caption" : "thinker 2014",
-    "src" : "/images/thinker2014.jpg",
+  email: "pasupat@uw.edu",
+  image: {
+    caption: "thinker 2014",
+    src: "/images/thinker2014.jpg",
   },
-}
-
+};
 
 export default contactData;
