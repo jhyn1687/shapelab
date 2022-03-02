@@ -50,7 +50,7 @@ body {
 }
 
 .text-content {
-  display: flex;
+  display: block;
   align-items: center;
   text-decoration: none;
   padding: .5rem 1rem;

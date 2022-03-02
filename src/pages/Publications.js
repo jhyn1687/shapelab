@@ -1,16 +1,35 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import data from "../data/publications-data.js";
+import publicationsData from "../data/publications-data.js";
+import reviewsData from "../data/reviews-data.js";
 
 const Publications = () => {
+  let ctr = 0;
   return (
     <>
       <Helmet>
-        <title>ShapeLAB | {data.title} </title>
+        <title>ShapeLAB | {publicationsData.title} </title>
       </Helmet>
       <div className="column-container">
-        <h1 className="text-content">{data.title}</h1>
-        <p className="text-content"></p>
+        <h1 className="text-content">{publicationsData.title}</h1>
+        {
+        publicationsData.publications.map((dataIn) => {
+          return (
+            <p className="text-content" style={ (ctr++ % 2 === 0) ? {backgroundColor: "#D4E6ED"} : {}}>
+              {dataIn.author} <a href={dataIn.link}>{dataIn.title}</a>{" "}
+              {dataIn.journal}
+            </p>
+          );
+        })}
+        <h1 className="text-content">{reviewsData.title}</h1>
+        {reviewsData.publications.map((dataIn) => {
+          return (
+            <p className="text-content" style={(ctr++ % 2 === 0) ? {backgroundColor: "#D4E6ED"} : {}}>
+              {dataIn.author} <a href={dataIn.link}>{dataIn.title}</a>{" "}
+              {dataIn.journal}
+            </p>
+          );
+        })}
       </div>
     </>
   );

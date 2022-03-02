@@ -8,7 +8,7 @@ const Footer = () => {
         className="column-container"
         style={{ padding: "0", justifyContent: "space-evenly" }}
       >
-        <CopyrightMessage>{"\u00A9"} ShapeLAB 2021</CopyrightMessage>
+        <CopyrightMessage>{"\u00A9"} ShapeLAB 2022</CopyrightMessage>
         <div className="row-container">
           <a
             className="footer-links"

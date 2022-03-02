@@ -29,22 +29,34 @@ function Main() {
         <div className="cards_wrapper">
           <ul className="cards_items">
             <CardItem
-              src="images/img-9.jpg"
-              text="Encoding Visual Shape and Texture"
-              path="./shape-and-texture"
+              src="images/img-3.jpg"
+              text="Encoding Dynamic Visual Stimuli"
+              path="./dynamic-visual-stimuli"
+            />
+            <CardItem
+              src="images/img-2.jpg"
+              text="Processing Under Partial Occlusion"
+              path="./partial-occlusion"
             />
           </ul>
           <ul className="cards_items">
             <CardItem
-              src="images/img-3.jpg"
-              text="Perturbation Methods"
-              path="./pertubation-methods"
+              src="images/img-9.jpg"
+              text="Encoding Visual Shape and Texture"
+              path="./shape-and-texture"
             />
             <CardItem
               src="images/img-4.jpg"
               text="Multiphoton Imaging"
               path="./multiphoton-imaging"
             />
+            <CardItem
+              src="images/img-3.jpg"
+              text="Perturbation Methods"
+              path="./pertubation-methods"
+            />
+          </ul>
+          <ul className="cards_items">
             <CardItem
               src="images/img-4.jpg"
               text="Clutter and Crowding"
@@ -54,18 +66,6 @@ function Main() {
               src="images/img-8.jpg"
               text="Object Segmentation"
               path="./object-segmentation"
-            />
-          </ul>
-          <ul className="cards_items">
-            <CardItem
-              src="images/img-3.jpg"
-              text="Encoding Dynamic Visual Stimuli"
-              path="./dynamic-visual-stimuli"
-            />
-            <CardItem
-              src="images/img-2.jpg"
-              text="Processing Under Partial Occlusion"
-              path="./partial-occlusion"
             />
           </ul>
         </div>
