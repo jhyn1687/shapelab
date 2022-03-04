@@ -1,4 +1,4 @@
-FallbackResource ./index.html
+FallbackResource /shapelab/new-website-WIP/index.html
 
 RewriteEngine on
 
