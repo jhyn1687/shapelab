@@ -4,8 +4,8 @@ import { Route, Routes, useParams } from "react-router-dom";
 import data from "../data/projects-data.js";
 import NotFound from "./NotFound.js";
 
-import "../css/Cards.css";
-import CardItem from "../components/Cards/CardItem";
+import "../css/ProjectCards.css";
+import CardItem from "../components/Cards/ProjectCard";
 
 const Projects = () => {
   return (
