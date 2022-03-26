@@ -1,33 +1,62 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import data from "../data/members-data.js";
+import membersData from "../data/members-data.js";
 
 import "../css/PeopleCards.css";
 import CardItem from "../components/Cards/PeopleCard";
 
 const Members = () => {
+  const [json, setJson] = useState(0);
+  const [loading, setLoading] = useState(true);
+
+  const getData = () => {
+    fetch("data/members-data.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        return response.json();
+      })
+      .then((myJson) => {
+        setJson(myJson);
+        setLoading(false);
+      });
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  return loading ? (
+    <Wrapper internalJson={membersData} />
+  ) : (
+    <Wrapper internalJson={json} />
+  );
+};
+
+const Wrapper = (props) => {
+  let internalJson = props.internalJson;
+
   return (
     <>
       <Helmet>
-        <title>ShapeLAB | {data.title}</title>
+        <title>ShapeLAB | {internalJson.title}</title>
       </Helmet>
 
       <div className="column-container">
         <h1 className="text-content">Members</h1>
-        {[data].map((dataIn) => {
-          return (
-            <div
-              key={dataIn.title}
-              style={{ maxWidth: "800px", alignSelf: "center" }}
-            >
-              <img
-                src={process.env.PUBLIC_URL + dataIn.image.src}
-                alt={dataIn.image.caption}
-              />
-            </div>
-          );
-        })}
+        <div
+          key={internalJson.title}
+          style={{ maxWidth: "800px", alignSelf: "center" }}
+        >
+          <img
+            src={process.env.PUBLIC_URL + internalJson.image.src}
+            alt={internalJson.image.caption}
+          />
+        </div>
       </div>
       <Main />
     </>

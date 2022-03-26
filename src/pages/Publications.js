@@ -16,7 +16,7 @@ const Publications = () => {
         publicationsData.publications.map((dataIn) => {
           return (
             <p className="text-content" style={ (ctr++ % 2 === 0) ? {backgroundColor: "#D4E6ED"} : {}}>
-              {dataIn.author} <a href={dataIn.link}>{dataIn.title}</a>{" "}
+              {dataIn.author} <a href={process.env.PUBLIC_URL + dataIn.link}>{dataIn.title}</a>{" "}
               {dataIn.journal}
             </p>
           );
@@ -25,7 +25,7 @@ const Publications = () => {
         {reviewsData.publications.map((dataIn) => {
           return (
             <p className="text-content" style={(ctr++ % 2 === 0) ? {backgroundColor: "#D4E6ED"} : {}}>
-              {dataIn.author} <a href={dataIn.link}>{dataIn.title}</a>{" "}
+              {dataIn.author} <a href={process.env.PUBLIC_URL + dataIn.link}>{dataIn.title}</a>{" "}
               {dataIn.journal}
             </p>
           );
