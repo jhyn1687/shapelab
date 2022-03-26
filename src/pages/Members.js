@@ -82,21 +82,26 @@ function Main() {
               title="Post-Doctoral Fellow"
               path="./tomo"
             />
+            
+          </ul>
+          <ul className="people_cards_items">
             <CardItem
               src="images/img-8.jpg"
               name="Taekjun Kim, Ph.D."
               title="Post-Doctoral Fellow"
               path="./taekjun"
             />
-          </ul>
-          <ul className="people_cards_items">
             <CardItem
               src="images/img-9.jpg"
               name="Tony Bigelow"
               title="Graduate Student"
               path="./tony-b"
             />
-            <CardItem
+            
+          </ul>
+
+          <ul className="people_cards_items">
+          <CardItem
               src="images/img-4.jpg"
               name="Amber Fyall, M.Sc."
               title="Research Technician"
@@ -108,7 +113,7 @@ function Main() {
               title="Research Technician"
               path="./erin"
             />
-          </ul>
+            </ul>
           <ul className="people_cards_items">
             <CardItem
               src="images/img-4.jpg"
