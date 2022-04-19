@@ -71,13 +71,13 @@ function Main() {
         <div className="people_cards_wrapper">
           <ul className="people_cards_items">
             <CardItem
-              src="images/img-3.jpg"
+              src="images/anitha.gif"
               name="Anitha Pasupathy, Ph.D."
               title="Principal Investigator"
               path="./anitha"
             />
             <CardItem
-              src="images/img-2.jpg"
+              src="images/tomo.png"
               name="Tomoyuki Namima, Ph.D"
               title="Post-Doctoral Fellow"
               path="./tomo"
@@ -86,13 +86,13 @@ function Main() {
           </ul>
           <ul className="people_cards_items">
             <CardItem
-              src="images/img-8.jpg"
+              src="images/taekjun.jpg"
               name="Taekjun Kim, Ph.D."
               title="Post-Doctoral Fellow"
               path="./taekjun"
             />
             <CardItem
-              src="images/img-9.jpg"
+              src="images/tony-b.jpg"
               name="Tony Bigelow"
               title="Graduate Student"
               path="./tony-b"
@@ -102,13 +102,13 @@ function Main() {
 
           <ul className="people_cards_items">
           <CardItem
-              src="images/img-4.jpg"
+              src="images/amber.jpg"
               name="Amber Fyall, M.Sc."
               title="Research Technician"
               path="./amber"
             />
             <CardItem
-              src="images/img-3.jpg"
+              src="images/scientist.jpg"
               name="Erin Kempkes"
               title="Research Technician"
               path="./erin"
@@ -116,13 +116,13 @@ function Main() {
             </ul>
           <ul className="people_cards_items">
             <CardItem
-              src="images/img-4.jpg"
+              src="images/scientist.jpg"
               name="Natalia Owen"
               title="Undergraduate Student"
               path="./natalia"
             />
             <CardItem
-              src="images/img-8.jpg"
+              src="images/scientist.jpgnpm "
               name="Tony Yuan"
               title="Undergraduate Student"
               path="./tony-y"

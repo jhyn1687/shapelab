@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="page-container">
       <div className="content-wrap">
-        <Router basename="/shapelab/new-website-WIP">
+        <Router basename="/shapelab">
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
