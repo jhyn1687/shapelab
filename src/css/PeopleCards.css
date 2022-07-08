@@ -12,7 +12,8 @@
 
 .people_cards_wrapper {
   position: relative;
-  margin: 25px 0 45px;
+  margin: 25px 0 20px;
+  width: 80%
 }
 
 .people_cards_items {
@@ -75,7 +76,7 @@
 }
 
 .people_cards_item_info {
-  padding: 10px 15px 15px;
+  padding: 20px 30px 30px;
 }
 
 .people_cards_item_text{

@@ -1,60 +1,27 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import { Route, Routes, useParams } from "react-router-dom";
-import projectData from "../data/projects-data.js";
+import data from "../data/projects-data.js";
 import NotFound from "./NotFound.js";
 
 import "../css/ProjectCards.css";
 import CardItem from "../components/Cards/ProjectCard";
 
 const Projects = () => {
-  const [json, setJson] = useState(0);
-  const [loading, setLoading] = useState(true);
-
-  const getData = () => {
-    fetch("data/projects-data.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then((response) => {
-        return response.json();
-      })
-      .then((myJson) => {
-        setJson(myJson);
-        setLoading(false);
-      });
-  };
-  // get current website address and get data from directory
-  useEffect(() => {
-    getData();
-  }, []);
-
-  return loading ? (
-    <Wrapper internalJson={projectData} />
-  ) : (
-    <Wrapper internalJson={json} />
-  );
-};
-
-const Wrapper = (props) => {
-  let internalJson = props.internalJson;
   return (
     <>
       <Helmet>
-        <title>ShapeLAB | {internalJson.title}</title>
+        <title>ShapeLAB | {data.title}</title>
       </Helmet>
       <Routes>
-        <Route path=":id" element={<Topic internalJson={internalJson}/>} />
-        <Route path="/" element={<Main internalJson={internalJson}/>} />
+        <Route path=":id" element={<Topic/>} />
+        <Route path="/" element={<Main/>} />
       </Routes>
     </>
   );
 };
 
 function Main(props) {
-  let internalJson = props.internalJson;
   return (
     <div className="cards">
       <h1 className="text-content">Projects</h1>
@@ -109,9 +76,8 @@ function Main(props) {
 
 function Topic(props) {
   const { id } = useParams();
-  let internalJson = props.internalJson;
 
-  if (!internalJson["valid-projects"].includes(id.toLowerCase())) {
+  if (!data["valid-projects"].includes(id.toLowerCase())) {
     return <NotFound />;
   }
 

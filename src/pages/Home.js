@@ -1,55 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
-import homeData from "../data/home-data.js";
+import data from "../data/home-data.js";
 
 
 const Home = () => {
-  const [json, setJson] = useState(0);
-  const [loading, setLoading] = useState(true);
-
-  const getData = () => {
-    fetch("data/home-data.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then((response) => {
-        return response.json();
-      })
-      .then((myJson) => {
-        setJson(myJson);
-        setLoading(false);
-      });
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
-  return loading ? (
-    <Wrapper internalJson={homeData} />
-  ) : (
-    <Wrapper internalJson={json} />
-  );
-};
-
-const Wrapper = (props) => {
-  let internalJson = props.internalJson;
   return (
     <>
       <Helmet>
-        <title>ShapeLAB | {internalJson.title} </title>
+        <title>ShapeLAB | {data.title} </title>
       </Helmet>
       <div className="column-container">
-        <div key={internalJson.title}>
-          <h1 className="text-content">{internalJson.title}</h1>
-          <img
-            src={process.env.PUBLIC_URL + internalJson.image.src}
-            alt={internalJson.image.caption}
-          />
+        <div key={data.title}>
+          <h1 className="text-content">{data.title}</h1>
+          <img src={process.env.PUBLIC_URL + data.image.src} alt={data.image.caption} />
           <div>
-            {internalJson.content.map((textIn) => (
+            {data.content.map((textIn) => (
               <p className="text-content">{textIn}</p>
             ))}
           </div>
