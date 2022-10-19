@@ -20,8 +20,6 @@ Then, you can edit the files that you need in the `src/data` folder. Be wary whe
 > When editing the files, you can add an entry into the array by adding a `,` after the last entry. Make sure to follow the format of previous entries when adding items into the array.  
 > For example, in `reviews-data.js`, each entry in the array is an object that has 4 internal data fields: `author`, `link`, `title`, and `journal`. So when adding an entry into this array, make sure that all four fields are populated.
 
-After editing the `.js` file, you must also change the corresponding `.json` file in the public folder, since the website prefers to use the json files whenever available (to support the simple editing feature).
-
 ## Rebuilding the website
 
 In the terminal, again making sure you are in the correct folder (See [above](#editing-the-website-permanently)), run
