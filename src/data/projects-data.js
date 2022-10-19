@@ -1,6 +1,6 @@
 const projectsData = {
   title: "Projects",
-  rows: [{}],
+  // the valid urls for the projects
   "valid-projects": [
     "shape-and-texture",
     "partial-occlusion",

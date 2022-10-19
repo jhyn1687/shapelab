@@ -18,12 +18,14 @@
 
 .people_cards_items {
   margin-bottom: 24px;
+  justify-content: space-evenly;
 }
 
 .people_cards_item {
   display: flex;
   flex: 1;
   margin: 0 1rem;
+  max-width: 350px;
 }
 
 .people_cards_item_link {

@@ -14,19 +14,23 @@ const Projects = () => {
         <title>ShapeLAB | {data.title}</title>
       </Helmet>
       <Routes>
-        <Route path=":id" element={<Topic/>} />
-        <Route path="/" element={<Main/>} />
+        <Route path=":id" element={<Topic />} />
+        <Route path="/" element={<Main />} />
       </Routes>
     </>
   );
 };
 
 function Main(props) {
+  //This is hard coded in for now, because it's very convoluted to
+  //have dynamically different sized rows and store captions
+
   return (
     <div className="cards">
       <h1 className="text-content">Projects</h1>
       <div className="cards_container">
         <div className="cards_wrapper">
+
           <ul className="cards_items">
             <CardItem
               src="images/dynamic-visual-stimuli.gif"
@@ -90,6 +94,16 @@ function Topic(props) {
       {topicData.content.map((textIn) => (
         <p className="text-content">{textIn}</p>
       ))}
+
+      {topicData.publications.map((dataIn) => {
+        return (
+          <p className="text-content">
+            {dataIn.author}{" "}
+            <a href={dataIn.link}>{dataIn.title}</a>{" "}
+            {dataIn.journal}
+          </p>
+        );
+      })}
     </div>
   );
 }

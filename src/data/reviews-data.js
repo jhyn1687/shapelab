@@ -4,7 +4,6 @@ const reviewsData = {
     {
       author: "A. Pasupathy, D.V. Popovkina, T. Kim, 2020 ",
       link:
-        process.env.PUBLIC_URL +
         "/publications/" +
         "Pasupathy2020_AnnualReviewVS.pdf",
       title: " Visual functions of primate area V4.",
@@ -14,7 +13,6 @@ const reviewsData = {
     {
       author: "A. Pasupathy, T. Kim, D.V. Popovkina. 2019 ",
       link:
-        process.env.PUBLIC_URL +
         "/publications/" +
         "Pasupathy2019_CurrOpinion.pdf",
       title:
@@ -24,14 +22,14 @@ const reviewsData = {
 
     {
       author: "A. Pasupathy, Y. El-Shamayleh, D.V. Popovkina 2018 ",
-      link: process.env.PUBLIC_URL + "/publications/" + "Review2018.pdf",
+      link: "/publications/" + "Review2018.pdf",
       title: " Visual shape and object perception.",
       journal: " ORE.",
     },
 
     {
       author: "A. Pasupathy 2015 ",
-      link: process.env.PUBLIC_URL + "/publications/" + "Review 2015.pdf",
+      link: "/publications/" + "Review 2015.pdf",
       title: " The neural basis of image segmentation in the primate brain.",
       journal: " Neuroscience. 298:101-109.",
     },
@@ -54,7 +52,6 @@ const reviewsData = {
     {
       author: "C. E. Connor, S. L. Brincat & A. Pasupathy., 2007. ",
       link:
-        process.env.PUBLIC_URL +
         "/publications/" +
         "Connor_2007_Current-Opinion-in-Neurobiology.pdf",
       title: " Transformation of shape information in the ventral pathway. ",
@@ -64,7 +61,7 @@ const reviewsData = {
     {
       author: "A. Pasupathy, 2006. ",
       link:
-        process.env.PUBLIC_URL + "/publications/" + "PasupathyChapter_2006.pdf",
+        "/publications/" + "PasupathyChapter_2006.pdf",
       title: "Neural basis of shape representation in the primate brain",
       journal:
         " In: Visual Perception - Fundamentals of vision: Low and mid-level processes in perception. Progress in Brain Research, Martinez-Conde, Macknik, Martinez, Alonso & Tse, Eds.154 (part 1):293-313.",

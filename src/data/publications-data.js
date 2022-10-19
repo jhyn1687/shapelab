@@ -1,10 +1,13 @@
 const publicationsData = {
+  
   title: "Publications",
+  // add any new publications here
+  // format: {author, title, journal, link}
   publications: [
     {
       author: "T. Namima, A. Pasupathy. 2021 ",
       link:
-        process.env.PUBLIC_URL + "/publications/" + "Namima2021_JNeurosci.pdf",
+        "/publications/Namima2021_JNeurosci.pdf",
       title:
         " Encoding of Partially Occluded and Occluding Objects in Primate Inferior Temporal Cortex.",
       journal: " J Neurosci. 41: 5652-5666. 2021. ",
@@ -13,7 +16,6 @@ const publicationsData = {
     {
       author: "P. Zamarashkina, D. V. Popovkina, A. Pasupathy. 2020 ",
       link:
-        process.env.PUBLIC_URL +
         "/publications/" +
         "Zamarashkina2020_JNeurophy.pdf",
       title:
@@ -23,7 +25,7 @@ const publicationsData = {
 
     {
       author: "T. Kim, W. Bair, A. Pasupathy. 2019 ",
-      link: process.env.PUBLIC_URL + "/publications/" + "Kim2019_JNeurosci.pdf",
+      link: "/publications/Kim2019_JNeurosci.pdf",
       title: " Neural coding for shape and texture in macaque area V4.",
       journal: " J. Neurosci.3073-18.2019.",
     },
@@ -31,9 +33,7 @@ const publicationsData = {
     {
       author: "D.V. Popovkina, W. Bair, A. Pasupathy. 2019 ",
       link:
-        process.env.PUBLIC_URL +
-        "/publications/" +
-        "Popovkina2019_JNeurophy.pdf",
+        "/publications/Popovkina2019_JNeurophy.pdf",
       title:
         " Modelling diverse responses to filled and outline shapes in macaque V4.",
       journal: " J. Neurophysiol. jn.00456.2018.",
@@ -41,7 +41,7 @@ const publicationsData = {
 
     {
       author: "D.A. Pospisil, A. Pasupathy, W. Bair. 2018 ",
-      link: process.env.PUBLIC_URL + "/publications/" + "Pospisil2018.pdf",
+      link: "/publications/Pospisil2018.pdf",
       title:
         " 'Artiphysiology' reveals V4-like shape tuning in a deep network trained for image classification",
       journal: " Elife e38242.",
@@ -49,7 +49,7 @@ const publicationsData = {
 
     {
       author: "H. Choi, E. Shea-Brown,A. Pasupathy. 2018 ",
-      link: process.env.PUBLIC_URL + "/publications/" + "Choi2018.pdf",
+      link: "/publications/Choi2018.pdf",
       title:
         " Predictive coding in area V4: Dynamic shape discrimination under partial occlusion.",
       journal: " Neural Comput. 30(5):1209-1257.",
@@ -57,7 +57,7 @@ const publicationsData = {
 
     {
       author: "T. D. Oleskiw, A. Nowack, A. Pasupathy. 2018 ",
-      link: process.env.PUBLIC_URL + "/publications/" + "Oleskiw2018.pdf",
+      link: "/publications/Oleskiw2018.pdf",
       title: " Joint coding of shape and blur in area V4.",
       journal: " Nature Communications. (2018)9:466.",
     },
@@ -65,7 +65,7 @@ const publicationsData = {
     {
       author:
         "A.M. Fyall, Y. El-Shamayleh, H. Choi, E. Shea-Brown, A. Pasupathy. 2017 ",
-      link: process.env.PUBLIC_URL + "/publications/" + "2017PFC.pdf",
+      link: "/publications/2017PFC.pdf",
       title:
         " Dynamic representation of partially occluded objects in primate prefrontal and visual cortex.",
       journal: " elife. 6:e25784.",
@@ -74,9 +74,7 @@ const publicationsData = {
     {
       author: "Y. El-Shamayleh, A. Pasupathy. 2016 ",
       link:
-        process.env.PUBLIC_URL +
-        "/publications/" +
-        "Contour Curvature 2016.pdf",
+        "/publications/Contour Curvature 2016.pdf",
       title:
         " Contour Curvature As an Invariant Code for Objects in Visual Area V4.",
       journal: " JNeurosci. 36(20):5532-5543.",
@@ -85,9 +83,7 @@ const publicationsData = {
     {
       author: "T. D. Oleskiw, A. Pasupathy, W. Bair. 2014 ",
       link:
-        process.env.PUBLIC_URL +
-        "/publications/" +
-        "2014_BoundaryCurvature_JNPhys.pdf",
+        "/publications/2014_BoundaryCurvature_JNPhys.pdf",
       title:
         " Spectral receptive fields cannot explain curvature tuning in V4.",
       journal: " J. Neurophysiol. 112(9):2114-22.",
@@ -96,9 +92,7 @@ const publicationsData = {
     {
       author: "Y. Kosai, Y. El-Shamayleh, A. Fyall, A. Pasupathy. 2014. ",
       link:
-        process.env.PUBLIC_URL +
-        "/publications/" +
-        "2014V4PartiallyOccludedShapes.pdf",
+        "/publications/2014V4PartiallyOccludedShapes.pdf",
       title:
         " The role of area V4 in the discrimination of partially occluded shapes.",
       journal: " JNeurosci. 34(25):8570-84.",
@@ -107,9 +101,7 @@ const publicationsData = {
     {
       author: "J. M. Yau, A. Pasupathy, S. L. Brincat, C. E. Connor., 2013. ",
       link:
-        process.env.PUBLIC_URL +
-        "/publications/" +
-        "CurvatureDynamicsCerebCortex2013.pdf",
+        "/publications/CurvatureDynamicsCerebCortex2013.pdf",
       title: " Curvature processing dynamics in macaque area V4.",
       journal: " Cereb Cortex. 23(1):198-209.",
     },
@@ -117,9 +109,7 @@ const publicationsData = {
     {
       author: "B. N. Bushnell, A. Pasupathy., 2012. ",
       link:
-        process.env.PUBLIC_URL +
-        "/publications/" +
-        "Encoding AcrossColorsJNeuroPhys2012.pdf",
+        "/publications/Encoding AcrossColorsJNeuroPhys2012.pdf",
       title: " Shape encoding consistency across colors in primate V4.",
       journal: " J. Neurophysiol. 108(5):1299-308.",
     },
@@ -128,9 +118,7 @@ const publicationsData = {
       author:
         "B. N. Bushnell, P. J. Harding, Y. Kosai, W. Bair, A. Pasupathy., 2011. ",
       link:
-        process.env.PUBLIC_URL +
-        "/publications/" +
-        "EquiluminanceJNeuroSci2011.pdf",
+        "/publications/EquiluminanceJNeuroSci2011.pdf",
       title: " Equiluminance cells in visual cortical area V4.",
       journal: " J. Neurosci. 31(35):12398-412.",
     },
@@ -138,9 +126,7 @@ const publicationsData = {
     {
       author: "B. N. Bushnell, P. J. Harding, Y. Kosai, A. Pasupathy., 2011. ",
       link:
-        process.env.PUBLIC_URL +
-        "/publications/" +
-        "ParialOcclusionJNeuroSci2011.pdf",
+        "/publications/ParialOcclusionJNeuroSci2011.pdf",
       title:
         "Partial occlusion modulates contour-based shape encoding in primate area V4. ",
       journal: "J. Neurosci. 31(11):4012-24.",
@@ -150,16 +136,14 @@ const publicationsData = {
       author:
         "J. M. Yau, A. Pasupathy, P. J. Fitzgerald, S.S. Hsiao, C. E. Connor., 2009. ",
       link:
-        process.env.PUBLIC_URL +
-        "/publications/" +
-        "AnalogousCodingPNAS2009.pdf",
+        "/publications/AnalogousCodingPNAS2009.pdf",
       title: "Analogous intermediate shape coding in vision and touch. ",
       journal: "Proc Natl Acad Sci USA. 106(38):16457-62.",
     },
 
     {
       author: "M. H. Histed, A. Pasupathy, E. K. Miller., 2009. ",
-      link: process.env.PUBLIC_URL + "/publications/" + "LearningNeuron.pdf",
+      link: "/publications/LearningNeuron.pdf",
       title:
         "Learning substrates in the primate prefrontal cortex and striatum: sustained activity related to successful actions. ",
       journal: "Neuron. 63(2): 244-253. ",
@@ -168,9 +152,7 @@ const publicationsData = {
     {
       author: "M. Loh, A. Pasupathy, E. K. Miller, G. Deco., 2007. ",
       link:
-        process.env.PUBLIC_URL +
-        "/publications/" +
-        "NeurodynamicsJCognNeuroSci.pdf",
+        "/publications/NeurodynamicsJCognNeuroSci.pdf",
       title:
         "Neurodynamics of the prefrontal cortex during conditional visuomotor associations. ",
       journal: "J. Cog Neuro. 20(3):421-31.",
@@ -179,7 +161,7 @@ const publicationsData = {
     {
       author:
         "C. Cadieu, M. Kouh, A. Pasupathy, C. E. Connor, M. Reisenhuber & T. Poggio., 2007. ",
-      link: process.env.PUBLIC_URL + "/publications/" + "ModelV4JNeurophys.pdf",
+      link: "/publications/ModelV4JNeurophys.pdf",
       title: "A model of V4 shape selectivity and invariance. ",
       journal: "J. Neurophysiol. 98(3):1733-1750.",
     },
@@ -187,7 +169,7 @@ const publicationsData = {
     {
       author: "A. Pasupathy, E. K. Miller., 2005. ",
       link:
-        process.env.PUBLIC_URL + "/publications/" + "TimeCoursePFCNature.pdf",
+        "/publications/TimeCoursePFCNature.pdf",
       title:
         "Different time courses of learning-related activity in the prefrontal cortex and striatum. ",
       journal: "Nature. 433: 873-876.",
@@ -201,7 +183,7 @@ const publicationsData = {
     {
       author: "A. Pasupathy, C. E. Connor., 2002. ",
       link:
-        process.env.PUBLIC_URL + "/publications/" + "CodingShapeNatNeuro.pdf",
+        "/publications/CodingShapeNatNeuro.pdf",
       title: "Population coding of shape in area V4. ",
       journal: "Nat. Neurosci. 5: 1332-1338, News and Views, 1252-1254.",
     },
@@ -209,7 +191,7 @@ const publicationsData = {
     {
       author: "A. Pasupathy, C. E. Connor., 2001. ",
       link:
-        process.env.PUBLIC_URL + "/publications/" + "ShapeRepV4JNeurophys.pdf",
+        "/publications/ShapeRepV4JNeurophys.pdf",
       title:
         "Shape representation in area V4: Position-specific tuning for boundary conformation. ",
       journal: "J. Neurophysiol. 86: 2505-2519.",
@@ -218,9 +200,7 @@ const publicationsData = {
     {
       author: "A. Pasupathy, C. E. Connor., 1999. ",
       link:
-        process.env.PUBLIC_URL +
-        "/publications/" +
-        "ContourResponseJNeurophys.pdf",
+        "/publications/ContourResponseJNeurophys.pdf",
       title: "Responses to contour features in macaque area V4. ",
       journal: "J. Neurophysiol. 82: 2490-2502.",
     },
@@ -229,9 +209,7 @@ const publicationsData = {
       author:
         "Y. Si, J. Gotman, A. Pasupathy, D. Flanagan, B. Rosenblatt & R.Gottesman., 1998. ",
       link:
-        process.env.PUBLIC_URL +
-        "/publications/" +
-        "PediatricICU_ECNeurophys.pdf",
+        "/publications/PediatricICU_ECNeurophys.pdf",
       title:
         " An expert system for EEG monitoring in the pediatric intensive care unit. ",
       journal: " Electroenceph. Clin. Neurophysiol. 106(6): 488-500.",

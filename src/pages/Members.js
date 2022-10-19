@@ -1,6 +1,5 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
 import data from "../data/members-data.js";
 
 import "../css/PeopleCards.css";
@@ -37,74 +36,50 @@ function Main() {
       <div className="people_cards">
         <div className="people_cards_container">
           <div className="people_cards_wrapper">
-            <ul className="people_cards_items">
-              <CardItem
-                src={process.env.PUBLIC_URL + "/images/anitha.gif"}
-                name="Anitha Pasupathy, Ph.D."
-                title="Principal Investigator"
-                path="./anitha"
-              />
-              <CardItem
-                src={process.env.PUBLIC_URL + "/images/tomo.png"}
-                name="Tomoyuki Namima, Ph.D"
-                title="Post-Doctoral Fellow"
-                path="./tomo"
-              />
-              
-            </ul>
-            <ul className="people_cards_items">
-              <CardItem
-                src={process.env.PUBLIC_URL + "/images/taekjun.jpg"}
-                name="Taekjun Kim, Ph.D."
-                title="Post-Doctoral Fellow"
-                path="./taekjun"
-              />
-              <CardItem
-                src={process.env.PUBLIC_URL + "/images/tony-b.jpg"}
-                name="Tony Bigelow"
-                title="Graduate Student"
-                path="./tony-b"
-              />
-              
-            </ul>
-
-            <ul className="people_cards_items">
-            <CardItem
-                src= {process.env.PUBLIC_URL + "/images/amber.jpg"}
-                name="Amber Fyall, M.Sc."
-                title="Research Technician"
-                path="./amber"
-              />
-              <CardItem
-                src={process.env.PUBLIC_URL + "/images/scientist.jpg"}
-                name="Erin Kempkes"
-                title="Research Technician"
-                path="./erin"
-              />
-              </ul>
-            <ul className="people_cards_items">
-              <CardItem
-                src={process.env.PUBLIC_URL + "/images/scientist.jpg"}
-                name="Natalia Owen"
-                title="Undergraduate Student"
-                path="./natalia"
-              />
-              <CardItem
-                src={process.env.PUBLIC_URL + "/images/scientist.jpg"}
-                name="Tony Yuan"
-                title="Undergraduate Student"
-                path="./tony-y"
-              />
-            </ul>
+            {data.members.map((dataIn) => {
+              return (
+                <ul className="people_cards_items">
+                  {dataIn.map((dataIn2) => {
+                    return (
+                      <CardItem
+                        key={dataIn2.name}
+                        src={dataIn2.src}
+                        name={dataIn2.name}
+                        title={dataIn2.title}
+                        blurb={dataIn2.blurb}
+                      />
+                    );
+                  })}
+                </ul>
+              );
+            })}
           </div>
         </div>
       </div>
-      
-      <Link to="./previous-members">
-        <h3 className="text-content" style={{ textAlign: "center" }}>
-          Previous Members
-        </h3>
-      </Link>
+
+      <h1 className="text-content">Previous Members</h1>
+      <div className="people_cards">
+        <div className="people_cards_container">
+          <div className="people_cards_wrapper">
+            {data.previousMembers.map((dataIn) => {
+              return (
+                <>
+                  <h2 className="text-content">{dataIn.classification}</h2>
+                  <ul>
+                    {dataIn.people.map((dataIn2) => {
+                      return (
+                        <h4 style={{ textAlign: "center" }}>
+                          {dataIn2.name}; {dataIn2.caption}
+                        </h4>
+                      );
+                    })}
+                  </ul>
+                </>
+              );
+            })}
+          </div>
+        </div>
+      </div>
     </>
   );
 }
