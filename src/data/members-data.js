@@ -64,7 +64,7 @@ const membersData = {
     ],
     [
       {
-        src: process.env.PUBLIC_URL + "/images/scientist.jpg",
+        src: process.env.PUBLIC_URL + "/images/tony-y.jpg",
         name: "Tony Yuan",
         title: "Undergrad, CS",
         blurb: "",
