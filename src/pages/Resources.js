@@ -74,7 +74,7 @@ function Topic(props) {
         if(textIn.link == null) {
           return (<p className="text-content">{textIn.text}</p>);
         } else {
-          return (<a className="text-content links" href={textIn.link}>{textIn.text}</a>);
+          return (<a className="text-content links" href={process.env.PUBLIC_URL + textIn.link}>{textIn.text}</a>);
         }
       }
       )}
