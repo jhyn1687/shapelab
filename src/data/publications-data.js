@@ -5,6 +5,15 @@ const publicationsData = {
   // format: {author, title, journal, link}
   publications: [
     {
+      author: "T. Kim, W. Bair, A. Pasupathy. 2022 ",
+      link:
+        "/publications/Kim2022_JNeurosci.pdf",
+      title:
+        "2022  Perceptual Texture Dimensions Modulate Neuronal Response Dynamics in Visual Cortical Area V4.",
+      journal: "J. Neurosci. 42(4), 631-642.",
+    },
+
+    {
       author: "T. Namima, A. Pasupathy. 2021 ",
       link:
         "/publications/Namima2021_JNeurosci.pdf",

@@ -57,6 +57,14 @@ const Navbar = () => {
           >
             <h3>Contact</h3>
           </NavLink>
+          <NavLink
+            to="/resources"
+            onClick={() => {
+              setDropdown(false);
+            }}
+          >
+            <h3>Resources</h3>
+          </NavLink>
         </NavMenu>
         <Bars isOpen={dropdown} onClick={showDropdown} />
         <Close isOpen={dropdown} onClick={showDropdown} />

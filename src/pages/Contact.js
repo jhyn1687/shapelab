@@ -10,7 +10,7 @@ const Contact = () => {
         <title>ShapeLAB | {data.title}</title>
       </Helmet>
       <div className="column-container">
-        <h1 className="text-content">Contact</h1>
+        <h1 className="text-content align-center">Contact</h1>
           <div className="row-container">
             <div>
               {data.content.map((textIn) => (
@@ -19,6 +19,7 @@ const Contact = () => {
               <p className="text-content">
                 Email:&nbsp; 
                 <Link
+                className="links"
                 to="#"
                 onClick={(e) => {
                   window.location = "mailto:" + data.email;

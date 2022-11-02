@@ -11,7 +11,7 @@ const Home = () => {
       </Helmet>
       <div className="column-container">
         <div key={data.title}>
-          <h1 className="text-content">{data.title}</h1>
+          <h1 className="text-content align-center">{data.title}</h1>
           <img src={process.env.PUBLIC_URL + data.image.src} alt={data.image.caption} />
           <div>
             {data.content.map((textIn) => (

@@ -27,7 +27,7 @@ function Main(props) {
 
   return (
     <div className="cards">
-      <h1 className="text-content">Projects</h1>
+      <h1 className="text-content align-center">Projects</h1>
       <div className="cards_container">
         <div className="cards_wrapper">
 
@@ -89,7 +89,7 @@ function Topic(props) {
 
   return (
     <div className="column-container">
-      <h1 className="text-content">{topicData.title}</h1>
+      <h1 className="text-content align-center">{topicData.title}</h1>
 
       {topicData.content.map((textIn) => (
         <p className="text-content">{textIn}</p>

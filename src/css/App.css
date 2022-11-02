@@ -52,16 +52,11 @@ body {
 .text-content {
   display: block;
   align-items: center;
-  text-decoration: none;
   padding: .5rem 1rem;
   color: #050401;
 }
 
-h1 {
-  text-align: center;
-}
-
-h2 {
+.align-center {
   text-align: center;
 }
 
@@ -84,3 +79,7 @@ img {
   font-size: 0.9rem;
   font-weight: 800;
 }
+
+.links {
+  color: #1A5E75;
+} 

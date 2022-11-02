@@ -23,7 +23,7 @@ const membersData = {
       {
         src: process.env.PUBLIC_URL + "/images/taekjun.jpg",
         name: "Taekjun Kim, Ph.D.",
-        title: "Principal Investigator",
+        title: "Acting Instructor",
         blurb: "",
       },
       {

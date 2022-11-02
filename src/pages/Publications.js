@@ -11,7 +11,7 @@ const Publications = () => {
         <title>ShapeLAB | {publicationsData.title} </title>
       </Helmet>
       <div className="column-container">
-        <h1 className="text-content">{publicationsData.title}</h1>
+        <h1 className="text-content align-center">{publicationsData.title}</h1>
         {publicationsData.publications.map((dataIn) => {
           return (
             <p
@@ -19,12 +19,12 @@ const Publications = () => {
               style={ctr++ % 2 === 0 ? { backgroundColor: "#D4E6ED" } : {}}
             >
               {dataIn.author}{" "}
-              <a href={process.env.PUBLIC_URL + dataIn.link}>{dataIn.title}</a>{" "}
+              <a className="links" href={process.env.PUBLIC_URL + dataIn.link}>{dataIn.title}</a>{" "}
               {dataIn.journal}
             </p>
           );
         })}
-        <h1 className="text-content">{reviewsData.title}</h1>
+        <h1 className="text-content align-center">{reviewsData.title}</h1>
         {reviewsData.publications.map((dataIn) => {
           return (
             <p
@@ -32,7 +32,7 @@ const Publications = () => {
               style={ctr++ % 2 === 0 ? { backgroundColor: "#D4E6ED" } : {}}
             >
               {dataIn.author}{" "}
-              <a href={process.env.PUBLIC_URL + dataIn.link}>{dataIn.title}</a>{" "}
+              <a className="links" href={process.env.PUBLIC_URL + dataIn.link}>{dataIn.title}</a>{" "}
               {dataIn.journal}
             </p>
           );

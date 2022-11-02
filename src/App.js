@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Members from "./pages/Members";
 import Publications from "./pages/Publications";
+import Resources from "./pages/Resources";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/members/*" element={<Members />} />
             <Route path="/projects/*" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/resources/*" element={<Resources />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>

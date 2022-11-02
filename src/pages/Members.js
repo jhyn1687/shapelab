@@ -13,7 +13,7 @@ const Members = () => {
       </Helmet>
 
       <div className="column-container">
-        <h1 className="text-content">Members</h1>
+        <h1 className="text-content align-center">Members</h1>
         <div
           key={data.title}
           style={{ maxWidth: "800px", alignSelf: "center" }}
@@ -32,7 +32,7 @@ const Members = () => {
 function Main() {
   return (
     <>
-      <h1 className="text-content">Meet The Team</h1>
+      <h1 className="text-content align-center">Meet The Team</h1>
       <div className="people_cards">
         <div className="people_cards_container">
           <div className="people_cards_wrapper">
@@ -57,14 +57,14 @@ function Main() {
         </div>
       </div>
 
-      <h1 className="text-content">Previous Members</h1>
+      <h1 className="text-content align-center">Previous Members</h1>
       <div className="people_cards">
         <div className="people_cards_container">
           <div className="people_cards_wrapper">
             {data.previousMembers.map((dataIn) => {
               return (
                 <>
-                  <h2 className="text-content">{dataIn.classification}</h2>
+                  <h2 className="text-content align-center">{dataIn.classification}</h2>
                   <ul>
                     {dataIn.people.map((dataIn2) => {
                       return (

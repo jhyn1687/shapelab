@@ -43,7 +43,7 @@ export const Bars = styled(FaBars)`
   display: none;
   color: #37d4fb;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     display: block;
     position: absolute;
     top: 0;
@@ -60,7 +60,7 @@ export const Close = styled(CloseIcon)`
   display: none;
   color: #37d4fb;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 900px) {
     display: block;
     position: absolute;
     top: 0;
@@ -121,11 +121,11 @@ export const NavMenu = styled.div`
   position: relative;
   z-index: 10;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     overflow: hidden;
     flex-direction: column;
     width: 100%;
-    max-height: ${(props) => (props.isOpen ? "300px" : "0px")};
+    max-height: ${(props) => (props.isOpen ? "350px" : "0px")};
     transition: max-height 0.3s ease-in;
   }
   /* 
