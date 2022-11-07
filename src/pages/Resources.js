@@ -55,7 +55,7 @@ const Main = () => {
   );
 };
 
-function Topic(props) {
+function Topic() {
   const { id } = useParams();
 
   if (!data["valid-resources"].includes(id.toLowerCase())) {

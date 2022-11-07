@@ -21,7 +21,7 @@ const Projects = () => {
   );
 };
 
-function Main(props) {
+function Main() {
   //This is hard coded in for now, because it's very convoluted to
   //have dynamically different sized rows and store captions
 
@@ -78,7 +78,7 @@ function Main(props) {
   );
 }
 
-function Topic(props) {
+function Topic() {
   const { id } = useParams();
 
   if (!data["valid-projects"].includes(id.toLowerCase())) {
