@@ -54,6 +54,11 @@ body {
   align-items: center;
   padding: .5rem 1rem;
   color: #050401;
+  line-height: 1.5;
+}
+
+.projects {
+  margin: 0rem 6rem;
 }
 
 .align-center {
@@ -68,8 +73,6 @@ body {
 } */
 
 img {
-  min-width: 100%;
-  max-width: 100%;
   height: auto;
   padding: .75rem .75rem;
 }
@@ -83,3 +86,8 @@ img {
 .links {
   color: #1A5E75;
 } 
+
+.banners {
+  min-width: 100%;
+  max-width: 100%;
+}

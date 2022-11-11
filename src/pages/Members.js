@@ -19,6 +19,7 @@ const Members = () => {
           style={{ maxWidth: "800px", alignSelf: "center" }}
         >
           <img
+            className="banners"
             src={process.env.PUBLIC_URL + data.image.src}
             alt={data.image.caption}
           />
@@ -68,7 +69,7 @@ function Main() {
                   <ul>
                     {dataIn.people.map((dataIn2) => {
                       return (
-                        <h4 style={{ textAlign: "center" }}>
+                        <h4 className="text-content align-center">
                           {dataIn2.name}; {dataIn2.caption}
                         </h4>
                       );

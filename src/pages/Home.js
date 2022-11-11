@@ -12,7 +12,7 @@ const Home = () => {
       <div className="column-container">
         <div key={data.title}>
           <h1 className="text-content align-center">{data.title}</h1>
-          <img src={process.env.PUBLIC_URL + data.image.src} alt={data.image.caption} />
+          <img className="banners" src={process.env.PUBLIC_URL + data.image.src} alt={data.image.caption} />
           <div>
             {data.content.map((textIn) => (
               <p className="text-content">{textIn}</p>

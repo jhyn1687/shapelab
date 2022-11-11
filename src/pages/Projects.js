@@ -6,6 +6,7 @@ import NotFound from "./NotFound.js";
 
 import "../css/ProjectCards.css";
 import CardItem from "../components/Cards/ProjectCard";
+import { textAlign } from "@mui/system";
 
 const Projects = () => {
   return (
@@ -30,7 +31,6 @@ function Main() {
       <h1 className="text-content align-center">Projects</h1>
       <div className="cards_container">
         <div className="cards_wrapper">
-
           <ul className="cards_items">
             <CardItem
               src="images/dynamic-visual-stimuli.gif"
@@ -87,22 +87,45 @@ function Topic() {
 
   var topicData = require("../data/projects/" + id + ".js").default;
 
+  let ctr = 0;
+
   return (
     <div className="column-container">
       <h1 className="text-content align-center">{topicData.title}</h1>
 
-      {topicData.content.map((textIn) => (
-        <p className="text-content">{textIn}</p>
-      ))}
-
-      {topicData.publications.map((dataIn) => {
-        return (
-          <p className="text-content">
-            {dataIn.author}{" "}
-            <a href={dataIn.link}>{dataIn.title}</a>{" "}
-            {dataIn.journal}
-          </p>
-        );
+      {topicData.content.map((textIn) => {
+        switch (textIn.type) {
+          case "text":
+            return <p className="text-content projects">{textIn.value}</p>;
+          case "link":
+            return (
+              <a className="text-content projects" href={textIn.value.link}>
+                {textIn.value.text}
+              </a>
+            );
+          case "image":
+            return (
+              <div className="align-center">
+              <img style={{
+                width:"60%"
+              }}
+              src={process.env.PUBLIC_URL + textIn.value.src}
+              alt={textIn.value.caption} />
+              </div>
+            )
+          case "publication":
+            return (
+              <p
+                className="text-content projects"
+                style={ctr++ % 2 === 0 ? { backgroundColor: "#D4E6ED" } : {}}
+              >
+                {textIn.value.author} <a href={textIn.value.link}>{textIn.value.title}</a>{" "}
+                {textIn.value.journal}
+              </p>
+            );
+          default:
+            return <p className="text-content projects">{textIn.value}</p>;
+        }
       })}
     </div>
   );

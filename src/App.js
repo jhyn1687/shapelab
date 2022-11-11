@@ -9,12 +9,14 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Members from "./pages/Members";
 import Publications from "./pages/Publications";
 import Resources from "./pages/Resources";
+import ScrollToTop from "./components/ScrollToTop"
 
 function App() {
   return (
     <div className="page-container">
       <div className="content-wrap">
         <Router basename="/shapelab">
+          <ScrollToTop />
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
