@@ -20,10 +20,10 @@ const projectData = {
     versus surface motion in the macaque ventral stream)."},
     {type: "text", value: "Motivated by these results we are now working to determine how form and motion signals \
     are multiplexed in primate V4 and how these selectivities are built. "},
-    {type: "image", value: {src: "/images/dynamic-stimuli/LAM_drift_opp.gif", caption: "Drift"}},
-    {type: "text", value: "Drifting Stimulus"},
-    {type: "image", value: {src: "/images/dynamic-stimuli/LAM_noise.gif", caption: "Noise"}},
-    {type: "text", value: "Noisy Stimulus"},
+    {type: "image", value: {src: "/images/dynamic-stimuli/LAM_drift_opp.gif", caption: "Sinusoidal grating Stimulus"}},
+    {type: "text", class: "align-center", value: "Sinusoidal grating Stimulus"},
+    {type: "image", value: {src: "/images/dynamic-stimuli/LAM_noise.gif", caption: "Julesz noise Stimulus"}},
+    {type: "text", class: "align-center", value: "Julesz noise Stimulus"},
   ],
 };
 

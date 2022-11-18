@@ -33,14 +33,14 @@ function Main() {
         <div className="cards_wrapper">
           <ul className="cards_items">
             <CardItem
-              src="images/dynamic-visual-stimuli.gif"
-              text="Encoding Dynamic Visual Stimuli"
-              path="./dynamic-visual-stimuli"
-            />
-            <CardItem
               src="images/partial-occlusion.png"
               text="Processing Under Partial Occlusion"
               path="./partial-occlusion"
+            />
+            <CardItem
+              src="images/dynamic-visual-stimuli.gif"
+              text="Encoding Dynamic Visual Stimuli"
+              path="./dynamic-visual-stimuli"
             />
           </ul>
           <ul className="cards_items">
@@ -96,7 +96,7 @@ function Topic() {
       {topicData.content.map((textIn) => {
         switch (textIn.type) {
           case "text":
-            return <p className="text-content projects">{textIn.value}</p>;
+            return <p className={"text-content projects " + textIn.class}>{textIn.value}</p>;
           case "link":
             return (
               <a className="text-content projects" href={textIn.value.link}>
