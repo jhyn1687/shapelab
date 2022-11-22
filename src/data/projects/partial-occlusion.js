@@ -42,22 +42,12 @@ const projectData = {
     {
       type: "publication",
       value: {
-        author: "H. Choi, E. Shea-Brown,A. Pasupathy. 2018 ",
-        link: "/publications/Choi2018.pdf",
-        title:
-          " Predictive coding in area V4: Dynamic shape discrimination under partial occlusion.",
-        journal: " Neural Comput. 30(5):1209-1257.",
-      },
-    },
-    {
-      type: "publication",
-      value: {
         author:
-          "A.M. Fyall, Y. El-Shamayleh, H. Choi, E. Shea-Brown, A. Pasupathy. 2017 ",
-        link: "/publications/2017PFC.pdf",
+          "B. N. Bushnell, P. J. Harding, Y. Kosai, A. Pasupathy., 2011. ",
+        link: "/publications/ParialOcclusionJNeuroSci2011.pdf",
         title:
-          " Dynamic representation of partially occluded objects in primate prefrontal and visual cortex.",
-        journal: " elife. 6:e25784.",
+          "Partial occlusion modulates contour-based shape encoding in primate area V4. ",
+        journal: "J. Neurosci. 31(11):4012-24.",
       },
     },
     {
@@ -74,13 +64,23 @@ const projectData = {
       type: "publication",
       value: {
         author:
-          "B. N. Bushnell, P. J. Harding, Y. Kosai, A. Pasupathy., 2011. ",
-        link: "/publications/ParialOcclusionJNeuroSci2011.pdf",
+          "A.M. Fyall, Y. El-Shamayleh, H. Choi, E. Shea-Brown, A. Pasupathy. 2017 ",
+        link: "/publications/2017PFC.pdf",
         title:
-          "Partial occlusion modulates contour-based shape encoding in primate area V4. ",
-        journal: "J. Neurosci. 31(11):4012-24.",
+          " Dynamic representation of partially occluded objects in primate prefrontal and visual cortex.",
+        journal: " elife. 6:e25784.",
       },
     },
+    {
+      type: "publication",
+      value: {
+        author: "H. Choi, E. Shea-Brown,A. Pasupathy. 2018 ",
+        link: "/publications/Choi2018.pdf",
+        title:
+          " Predictive coding in area V4: Dynamic shape discrimination under partial occlusion.",
+        journal: " Neural Comput. 30(5):1209-1257.",
+      },
+    }
   ],
 };
 

@@ -21,18 +21,18 @@ const projectData = {
     supporting the hypothesis they encode a segmented representation of the visual scene." },
     {type: "text", value: "Relevant publications:"},
     {type: "publication", value: {
+      author: "A. Pasupathy 2015 ",
+      link: "/publications/" + "Review 2015.pdf",
+      title: " The neural basis of image segmentation in the primate brain.",
+      journal: " Neuroscience. 298:101-109.",
+    }},
+    {type: "publication", value: {
       author: "T. Namima, A. Pasupathy. 2021 ",
       link:
         "/publications/Namima2021_JNeurosci.pdf",
       title:
         " Encoding of Partially Occluded and Occluding Objects in Primate Inferior Temporal Cortex.",
       journal: " J Neurosci. 41: 5652-5666. 2021. ",
-    }},
-    {type: "publication", value: {
-      author: "A. Pasupathy 2015 ",
-      link: "/publications/" + "Review 2015.pdf",
-      title: " The neural basis of image segmentation in the primate brain.",
-      journal: " Neuroscience. 298:101-109.",
     }}
   ]
 };
