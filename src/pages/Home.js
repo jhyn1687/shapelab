@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import {NavLink as Link} from 'react-router-dom';
 import data from "../data/home-data.js";
 
 
@@ -17,6 +18,9 @@ const Home = () => {
             {data.content.map((textIn) => (
               <p className="text-content">{textIn}</p>
             ))}
+          </div>
+          <div>
+            <h3 className="text-content">We currently have positions open, check them out <Link to="/positions">here</Link>.</h3>
           </div>
         </div>
       </div>

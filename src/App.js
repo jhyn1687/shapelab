@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Members from "./pages/Members";
 import Publications from "./pages/Publications";
 import Resources from "./pages/Resources";
+import Positions from "./pages/Positions";
 import ScrollToTop from "./components/ScrollToTop"
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/projects/*" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/resources/*" element={<Resources />} />
+            <Route path="/positions/" element={<Positions />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
