@@ -32,37 +32,28 @@ const membersData = {
         title: "Postdoctoral Fellow (joint with Jonathan Pillow)",
         blurb: "",
       },
-      
     ],
     [
-      {
-        src: process.env.PUBLIC_URL + "/images/tony-b.jpg",
-        name: "Tony Bigelow",
-        title: "Grad Student Neuroscience",
-        blurb: "",
-      },
       {
         src: process.env.PUBLIC_URL + "/images/scientist.jpg",
         name: "Rohit Kamath ",
         title: "Grad Student Neuroscience",
         blurb: "",
       },
-    ],
-    [
       {
         src: process.env.PUBLIC_URL + "/images/scientist.jpg",
         name: "Erin Kempkes",
         title: "Research Scientist",
         blurb: "",
       },
+    ],
+    [
       {
         src: process.env.PUBLIC_URL + "/images/scientist.jpg",
-        name: "Kayla Kerr",
+        name: "Sofia Beaufrand",
         title: "Research Scientist",
         blurb: "",
       },
-    ],
-    [
       {
         src: process.env.PUBLIC_URL + "/images/tony-y.jpg",
         name: "Tony Yuan",
@@ -85,10 +76,14 @@ const membersData = {
           name: "Timothy D Oleskiw (Applied Math)",
           caption: "now postdoc NYU ",
         },
+        {
+          name: "Tony Bigelow",
+          caption: ""
+        }
       ],
     },
     {
-      classification: "Postdoctoral Fellows ",
+      classification: "Postdoctoral Fellows",
       people: [
         { name: "Anarta Ghosh", caption: "now Research Scientist, Ireland " },
         {
@@ -157,6 +152,10 @@ const membersData = {
           name: "Polina Zamarashkina",
           caption: "",
         },
+        {
+          name: "Kayla Kerr",
+          caption: "Grad student at Case Western Reserve University"
+        }
       ],
     },
   ],
